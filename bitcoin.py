@@ -6,7 +6,7 @@ import requests
 def main():
     dollars = 'USD'
     num_bitcoin = get_bitcoin_amount()
-    converted = convert_bpi_to_dollars(num_bitcoin, dollars)
+    converted = convert_btc_to_dollars(num_bitcoin, dollars)
     display_result(num_bitcoin, converted)
 
 
@@ -15,7 +15,7 @@ def get_bitcoin_amount():
     return float(input('Enter amount of Bitcoin to convert: '))
 
 
-def convert_bpi_to_dollars(num_bitcoin, dollars):
+def convert_btc_to_dollars(num_bitcoin, dollars):
     """ Convert amount of bitcoin to USD """
     exchange_rate = get_exchange_rate(dollars)
     converted = convert(num_bitcoin, exchange_rate)
