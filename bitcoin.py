@@ -48,7 +48,7 @@ def convert(num_bitcoin, exchange_rate):
 
 def display_result(num_bitcoin, converted):
     """ Format and display the result """
-    print(f'${num_bitcoin:.2f} is equivalent to ${converted:.2f}.')
+    print(f'{num_bitcoin:.8f} BTC is equivalent to ${converted:.2f}.')
 
 
 if __name__ == '__main__':
